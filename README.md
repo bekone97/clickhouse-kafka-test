@@ -6,16 +6,13 @@
 make create
 ```
 
-## Что происходит при make create
+## Что происходит при make create - запускается докер-компоуз, создаются таблицы в Clickhouse, создается топик в Kafka, после этого просто добавить сообщения в топик и проверить как они подтягиваются 
+
+Доп make файлы : 
 ### ClickHouse
 Создаются необходимые таблицы из каталога /queries
 ```bash
 make clickhouse-create-tables
-```
-
-Чтобы подсчитать кол-во сохраненныъ сообщений в ClickHouse, запустить:
-```bash
-make clickhouse-messages-count
 ```
 
 Увидеть лог erorrs clickhouse, запустить:
@@ -33,6 +30,11 @@ make topic-create
 ```bash
 make topic-check
 ```
+Просмотр сообщений в топике, запустить:
+```bash
+make topic-consumer
+```
+
 
 Записать сообщения в кафка топи, запустить:
 ```bash
