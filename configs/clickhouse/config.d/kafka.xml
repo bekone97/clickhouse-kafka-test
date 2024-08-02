@@ -1,0 +1,7 @@
+<clickhouse>
+ <!-- Global configuration options for all tables of Kafka engine type -->
+  <kafka>
+    <debug>cgrp</debug>
+  </kafka>
+
+</clickhouse>

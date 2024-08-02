@@ -1,0 +1,24 @@
+<clickhouse>
+    <remote_servers>
+        <test_cluster>
+             <shard>
+                 <replica>
+                     <host>lab-clickhouse-kafka-clickhouse-1-1</host>
+                     <port>9000</port>
+                 </replica>
+             </shard>
+             <shard>
+                 <replica>
+                     <host>lab-clickhouse-kafka-clickhouse-2-1</host>
+                     <port>9000</port>
+                 </replica>
+             </shard>
+             <shard>
+                 <replica>
+                     <host>lab-clickhouse-kafka-clickhouse-3-1</host>
+                     <port>9000</port>
+                 </replica>
+             </shard>
+        </test_cluster>
+    </remote_servers>
+</clickhouse>
